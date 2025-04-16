@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi Kickboxing</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📅 Suivi Kickboxing</h1>
+    </header>
+    
+    <main>
+      <section class="box">
+        <h2>📆 Séance</h2>
+        <div class="form-group">
+          <label for="date">Date du cours :</label>
+          <input type="date" id="date" required>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2>🥊 Techniques Kickboxing</h2>
+        <div class="technique-list" id="technique-list">
+          <!-- Les techniques seront générées par JavaScript -->
+        </div>
+        <div class="buttons">
+          <button id="save-btn" class="primary">✅ Enregistrer</button>
+          <button id="reset-btn" class="secondary">🔄 Réinitialiser</button>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2>📊 Statistiques</h2>
+        <div class="chart-container">
+          <canvas id="techniques-chart"></canvas>
+        </div>
+        <div id="dashboard"></div>
+      </section>
+      
+      <section class="box">
+        <h2>📜 Historique des séances</h2>
+        <div id="history"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
